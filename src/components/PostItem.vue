@@ -2,7 +2,7 @@
   <article class="post">
     <header class="post-header">
       <div class="post-user">
-        <img class="profile-picture" src="/res/images/profile_pic.png" alt="profile picture">
+        <img class="profile-picture" src="/res/profile_pic.png" alt="profile picture">
         <strong>{{ post.author }}</strong>
       </div>
       <time>{{ post.date }}</time>

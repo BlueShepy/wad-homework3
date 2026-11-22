@@ -26,7 +26,7 @@ export default {
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   background-color: #f4f4f4;
 }
 

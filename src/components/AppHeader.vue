@@ -10,6 +10,8 @@
 </template>
 
 <style scoped>
+
+
 .site-header {
   background-color: #263449;
   color: white;
@@ -17,6 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 h1 {

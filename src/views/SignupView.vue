@@ -1,11 +1,11 @@
 <template>
   <div class="home">
-    <h2>Sign IN TO THE NEW GRAM</h2>
+    <h1>Welcome to The NEW GRAM</h1>
   </div>
 
-  <form action="index.html" method="get">
-    <b><label >Welcome to The GRAM</label></b>
-    <label > Create an account or Log in </label>
+    <form @submit.prevent>
+    <b><label >Sign up to The NEW GRAM</label></b>
+    <label >  </label>
     <input type="email" name="email"  required
     placeholder= "Enter a valid email"
     value="">
@@ -15,14 +15,14 @@
     value="">
 
     <br>
-    <input type="submit" value="Log in" >
+    <input type="submit" value="Sign Up" >
     <p style="color:rgb(24, 112, 245);">Forgot password?</p>
 </form>
 </template>
 
 <script>
 export default {
-  name: 'HomeView'
+  name: 'SignupView'
 }
 </script>
 
@@ -84,9 +84,10 @@ form textarea {
     resize: vertical;
 }
 
-/* Consistent form size */
 form {
     width: 90%;
     max-width: 420px;
+    margin: 20px auto;
+    box-sizing: border-box;
 }
 </style>

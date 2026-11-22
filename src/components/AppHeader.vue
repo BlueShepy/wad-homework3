@@ -12,6 +12,11 @@
 <style scoped>
 
 
+nav a {
+    font-size: 20px;
+    font-weight: normal;
+}
+
 .site-header {
   background-color: #263449;
   color: white;

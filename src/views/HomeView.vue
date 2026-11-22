@@ -46,4 +46,12 @@ export default {
 .reset-btn:hover {
   background-color: #3a4d6b;
 }
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
 </style>

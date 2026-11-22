@@ -1,14 +1,24 @@
 <template>
-  <article class="post">
+  <article v-if="post" class="post">
     <header class="post-header">
       <div class="post-user">
-        <img class="profile-picture" src="/res/profile_pic.png" alt="profile picture">
+        <img
+          class="profile-picture"
+          :src="imageUrl('res/profile_pic.png')"
+          alt="profile picture"
+        >
         <strong>{{ post.author }}</strong>
       </div>
       <time>{{ post.date }}</time>
     </header>
 
-    <img v-if="post.image" class="post-image" :src="'/' + post.image" alt="post image">
+    <img
+      v-if="post.image"
+      class="post-image"
+      :src="imageUrl(post.image)"
+      alt="post image"
+    >
+
     <p>{{ post.text }}</p>
 
     <div class="post-likes">
@@ -23,17 +33,34 @@ import { mapActions } from 'vuex'
 
 export default {
   name: 'PostItem',
+
   props: {
-    postId: { type: String, required: true }
+    postId: {
+      type: [String, Number],
+      required: true
+    }
   },
+
   computed: {
-    // the component gets its content from the Vuex store
     post() {
       return this.$store.getters.postById(this.postId)
     }
   },
+
   methods: {
-    ...mapActions(['likePost'])
+    ...mapActions(['likePost']),
+
+    imageUrl(path) {
+      if (!path) return ''
+
+      if (/^https?:\/\//i.test(path)) {
+        return path
+      }
+
+      const filename = path.split('/').pop()
+
+      return `${process.env.BASE_URL}res/${filename}`
+    }
   }
 }
 </script>
@@ -49,35 +76,43 @@ export default {
   box-sizing: border-box;
   text-align: left;
 }
+
 .post-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
 }
+
 .post-user {
   display: flex;
   align-items: center;
   gap: 8px;
 }
+
 .profile-picture {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
 }
+
 .post-image {
   width: 100%;
+  height: auto;
   border-radius: 4px;
 }
+
 p {
   margin: 12px 0 8px;
 }
+
 .post-likes {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .like-btn {
   padding: 4px 10px;
   border: none;
@@ -86,10 +121,8 @@ p {
   font-size: 18px;
   cursor: pointer;
 }
+
 .like-btn:hover {
   background-color: #d0d6e0;
 }
-
-
-
 </style>

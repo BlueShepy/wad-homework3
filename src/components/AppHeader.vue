@@ -1,6 +1,6 @@
 <template>
   <header class="site-header">
-    <h1>WAD Posts</h1>
+    <h1>THE new GRAM</h1>
 
     <nav>
       <router-link to="/">Home</router-link>

@@ -1,27 +1,49 @@
 <template>
   <div class="home">
-    <h2>Welcome to WAD Posts!</h2>
-    <p>Here you will find all the latest posts.</p>
-
     <section class="posts">
-      <h3>Latest Posts</h3>
-      <p>Our posts will appear here soon!</p>
+      <PostItem
+        v-for="post in allPosts"
+        :key="post.id"
+        :post-id="post.id"
+      />
+      <button class="reset-btn" @click="resetLikes">Reset likes</button>
     </section>
   </div>
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
+import PostItem from '@/components/PostItem.vue'
+
 export default {
-  name: 'HomeView'
+  name: 'HomeView',
+  components: { PostItem },
+  computed: {
+    ...mapGetters(['allPosts'])
+  },
+  methods: {
+    ...mapActions(['resetLikes'])
+  }
 }
 </script>
 
 <style scoped>
-.home {
-  text-align: center;
-}
-
 .posts {
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.reset-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #263449;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.reset-btn:hover {
+  background-color: #3a4d6b;
 }
 </style>

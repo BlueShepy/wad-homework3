@@ -3,7 +3,7 @@
     "author": "guy1",
     "date": "05.10.2026",
     "text": "just found this",
-    "image": "res/images/post1.jpg",
+    "image": "res/post1.jpg",
     "id": "1"
 
   },
@@ -11,7 +11,7 @@
     "author": "Silly Cat Owner",
     "date": "04.10.2026",
     "text": "look at my cat dawg",
-    "image": "res/images/cat1.gif",
+    "image": "res/cat1.gif",
     "id": "2"
 
   },
@@ -19,7 +19,7 @@
     "author": "Mike Ehrmantraut",
     "date": "03.10.2026",
     "text": "Waltuh, I'm a cat waltuh",
-    "image": "res/images/cat4.jpg",
+    "image": "res/cat4.jpg",
     "id": "3"
 
   },
@@ -27,7 +27,7 @@
     "author": "Silly fella",
     "date": "03.10.2026",
     "text": "Send this to your silliest friends",
-    "image": "res/images/cat2.gif",
+    "image": "res/cat2.gif",
     "id": "4"
 
   },
@@ -43,7 +43,7 @@
     "author": "Mrk",
     "date": "02.10.2026",
     "text": "My lovely cat <3",
-    "image": "res/images/cat3.jpg",
+    "image": "res/cat3.jpg",
     "id": "6"
 
   },
@@ -51,7 +51,7 @@
     "author": "Lil Fella",
     "date": "01.11.2026",
     "text": "Looka this goofy goober outside ma door",
-    "image": "res/images/cat7.png",
+    "image": "res/cat7.png",
     "id": "7"
 
   },
@@ -59,7 +59,7 @@
     "author": "Muna Mats",
     "date": "01.11.2026",
     "text": "He so small",
-    "image": "res/images/cat8.jpg",
+    "image": "res/cat8.jpg",
     "id": "8"
 
   },
@@ -67,7 +67,7 @@
     "author": "REM",
     "date": "01.11.2026",
     "text": "Bottom text",
-    "image": "res/images/cat9.jpg",
+    "image": "res/cat9.jpg",
     "id": "9"
 
   },
@@ -75,7 +75,7 @@
     "author": "Guy",
     "date": "01.11.2026",
     "text": "omagawd",
-    "image": "res/images/cat10.jpg",
+    "image": "res/cat10.jpg",
     "id": "10"
 
   }

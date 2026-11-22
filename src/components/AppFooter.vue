@@ -1,7 +1,7 @@
 <template>
   <footer>
-    <p>© 2026 WAD Posts. All rights reserved.</p>
-    <p>Web Application Development - Homework 3</p>
+    <h1>THE NEW GRAM</h1>
+    <h2>ฅ^•ﻌ•^ฅ</h2>
   </footer>
 </template>
 

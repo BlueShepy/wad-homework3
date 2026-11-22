@@ -15,8 +15,7 @@
     />
 
     <br>
-    <input type="submit" value="Sign Up" >
-</form>
+
     <input
       type="password"
       name="pass"
@@ -47,10 +46,7 @@
 
     <input type="submit" value="Sign Up" />
 
-    <p class="forgot-password">
-      Forgot password?
-    </p>
-  </form>
+</form>
 </template>
 
 <script>

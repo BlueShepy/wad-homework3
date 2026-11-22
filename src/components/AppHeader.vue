@@ -15,7 +15,7 @@
 .site-header {
   background-color: #263449;
   color: white;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,13 +23,13 @@
 }
 
 h1 {
-  margin: 0;
+  margin: 1;
   font-size: 24px;
 }
 
 nav {
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 a {

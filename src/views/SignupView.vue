@@ -16,7 +16,6 @@
 
     <br>
     <input type="submit" value="Sign Up" >
-    <p style="color:rgb(24, 112, 245);">Forgot password?</p>
 </form>
 </template>
 
